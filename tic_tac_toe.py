@@ -49,7 +49,7 @@ def comp_step(board):
     y = randint(1, 3)
     return (x, y) if board[x][y] == "-" else comp_step(board)
 
-
+# Основной цикл игры
 def main(board):
     game_board = board.copy()
     next_step = first_in()
